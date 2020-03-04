@@ -1,0 +1,45 @@
+log4cpp.rootCategory=DEBUG, rootAppender
+
+log4cpp.category.cat_debug=DEBUG, app_debug
+log4cpp.category.cat_notice=DEBUG, app_notice
+log4cpp.category.cat_warning=DEBUG, app_warning
+log4cpp.category.cat_error=DEBUG, app_error
+log4cpp.category.cat_critical=DEBUG, app_critical
+
+log4cpp.appender.rootAppender=ConsoleAppender
+log4cpp.appender.rootAppender.layout=BasicLayout
+
+log4cpp.appender.app_debug=FileAppender
+log4cpp.appender.app_debug.fileName=log/FFF.debug.log
+log4cpp.appender.app_debug.maxFileSize=80
+log4cpp.appender.app_debug.maxBackupIndex=100
+log4cpp.appender.app_debug.layout=PatternLayout
+log4cpp.appender.app_debug.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n
+
+log4cpp.appender.app_notice=FileAppender
+log4cpp.appender.app_notice.fileName=log/FFF.notice.log
+log4cpp.appender.app_notice.maxFileSize=80
+log4cpp.appender.app_notice.maxBackupIndex=100
+log4cpp.appender.app_notice.layout=PatternLayout
+log4cpp.appender.app_notice.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n
+
+log4cpp.appender.app_warning=FileAppender
+log4cpp.appender.app_warning.fileName=log/FFF.warning.log
+log4cpp.appender.app_warning.maxFileSize=80
+log4cpp.appender.app_warning.maxBackupIndex=100
+log4cpp.appender.app_warning.layout=PatternLayout
+log4cpp.appender.app_warning.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n
+
+log4cpp.appender.app_error=FileAppender
+log4cpp.appender.app_error.fileName=log/FFF.error.log
+log4cpp.appender.app_error.maxFileSize=80
+log4cpp.appender.app_error.maxBackupIndex=100
+log4cpp.appender.app_error.layout=PatternLayout
+log4cpp.appender.app_error.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n
+
+log4cpp.appender.app_critical=FileAppender
+log4cpp.appender.app_critical.fileName=log/FFF.critical.log
+log4cpp.appender.app_critical.maxFileSize=80
+log4cpp.appender.app_critical.maxBackupIndex=100
+log4cpp.appender.app_critical.layout=PatternLayout
+log4cpp.appender.app_critical.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n

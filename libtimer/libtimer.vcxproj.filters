@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libobjectpool">
+      <UniqueIdentifier>{0f905a86-a591-479e-9000-a94b666796ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libposix">
+      <UniqueIdentifier>{eeb6aca6-0112-4381-9b34-f6552c37a1c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libobjectpool\uobject_allocator.h">
+      <Filter>libobjectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libobjectpool\uobjectpool.h">
+      <Filter>libobjectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libposix\UAutoLock.h">
+      <Filter>libposix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libposix\umutex.h">
+      <Filter>libposix</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libposix\umutex.cpp">
+      <Filter>libposix</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

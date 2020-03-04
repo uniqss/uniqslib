@@ -1,0 +1,13 @@
+log4cpp.rootCategory=DEBUG, rootAppender
+
+log4cpp.category.Test=DEBUG, Test
+
+log4cpp.appender.rootAppender=ConsoleAppender
+log4cpp.appender.rootAppender.layout=BasicLayout
+
+log4cpp.appender.Test=FileAppender
+log4cpp.appender.Test.fileName=log/ControlServer.log
+log4cpp.appender.Test.maxFileSize=80
+log4cpp.appender.Test.maxBackupIndex=100
+log4cpp.appender.Test.layout=PatternLayout
+log4cpp.appender.Test.layout.ConversionPattern=%d{%Y%m%d%H%M%S}[%t]%p:%m%n

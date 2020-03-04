@@ -1,0 +1,7 @@
+
+ doc for hello world project.
+
+	yet another hello world cmake example.
+
+
+
