@@ -1,0 +1,3 @@
+LIBRARY helloworlddynamic
+EXPORTS
+	add	@2
