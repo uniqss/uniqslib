@@ -26,4 +26,8 @@ project "helloworlddynamic"
     postbuildcommands {
         "{COPY} ../lib/%{cfg.buildcfg}/helloworlddynamic.dll ../helloworldexe/bin/%{cfg.buildcfg}/"
         }
-        
+    
+    filter { "system:Linux" }
+    postbuildcommands {
+        "{COPY} ../lib/%{cfg.buildcfg}/helloworlddynamic.so ../helloworldexe/bin/%{cfg.buildcfg}/"
+        }
