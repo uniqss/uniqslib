@@ -3,4 +3,5 @@
 //#define UDLLEXPORT __declspec(dllexport) 
 #define UDLLEXPORT 
 #else
+#define UDLLEXPORT 
 #endif
