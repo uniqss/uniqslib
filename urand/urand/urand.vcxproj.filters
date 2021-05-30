@@ -21,6 +21,9 @@
     <ClCompile Include="..\..\common_header\mersenne_rand.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\common_header\mersenne_rand.h">

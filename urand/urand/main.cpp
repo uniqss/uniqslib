@@ -5,11 +5,15 @@
 
 int main(int argc, const char** argv)
 {
-	int nMax = 2147483647;
-	int nMin = -2147483648;
+	int nMax = INT_MAX;
+	int nMin = INT_MIN;
 	if (argc >= 2)
 	{
 		nMax = atoi(argv[1]);
+		if (nMax > 1)
+		{
+			nMin = 0;
+		}
 	}
 	if (argc >= 3)
 	{
